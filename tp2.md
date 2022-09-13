@@ -27,6 +27,7 @@ La variable a été écrite dans le bash, elle existe donc toujours
 
 #Programmation Bash
 
+##Exercice 2
 
 
 
