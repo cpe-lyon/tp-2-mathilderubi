@@ -41,13 +41,13 @@ La variable a été écrite dans le bash, elle existe donc toujours
 
 # Programmation Bash
 
-## Exercice 2
+## Exercice 2. Contrôle de mot de passe
 
 ![img8](image/image8.png)
 
 ![img9](image/image9.png)
 
-## Exercice 3
+## Exercice 3. Expressions rationnelles
 
 
 
