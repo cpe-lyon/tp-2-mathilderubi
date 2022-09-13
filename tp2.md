@@ -30,6 +30,7 @@ La variable a été écrite dans le bash, elle existe donc toujours
 ## Exercice 2
 
 [img8](image/image8.png)
+
 [img9](image/image9.png)
 
 ## Exercice 3
