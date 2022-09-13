@@ -10,5 +10,23 @@ La variable OLDPWD indique le dernier répertoire visité par l'utilisateur conn
 La variable SHELL indique le chemin du shell de l'utilisateur défini dans /etc/passwd
 
 4. [img1](imag/image1.png)
+La variable   MY_VAR existe, son contenu est bien affiché quand on echo $MY_VAR
+
 5. [img2](image/image2.png)
-La variable   MY_VAR
+La commande bash est une commande 
+La variable $MY_VAR n'existe car la session pendant laquelle elle a été créée n'estplus en cours
+
+6. [img3](image/image3.png)
+[img4](image/image4.png)
+La variable a été écrite dans le bash, elle existe donc toujours
+
+7. [img5](image/image5.png)
+8. [img6](image/image6.png)
+9. La commande unset supprime totalement une variable et sa valeur, alors que donner une valeur vide à une variable d'environnement conserve la variable, qui a du coup une valeur vide.
+10. [img7](image/image7.png)
+
+#Programmation Bash
+
+
+
+
