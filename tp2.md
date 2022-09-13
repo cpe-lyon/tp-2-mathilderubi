@@ -25,9 +25,14 @@ La variable a été écrite dans le bash, elle existe donc toujours
 9. La commande unset supprime totalement une variable et sa valeur, alors que donner une valeur vide à une variable d'environnement conserve la variable, qui a du coup une valeur vide.
 10. [img7](image/image7.png)
 
-#Programmation Bash
+# Programmation Bash
 
-##Exercice 2
+## Exercice 2
+
+[img8](image/image8.png)
+[img9](image/image9.png)
+
+## Exercice 3
 
 
 
