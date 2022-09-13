@@ -49,5 +49,27 @@ La variable a été écrite dans le bash, elle existe donc toujours
 
 ## Exercice 3. Expressions rationnelles
 
+```
+#!/bin/bash
 
+function is_number()
+{
+        re='^[+-]?[0-9]+([.][0-9]+)?$'
+        if ! [[ $1 =~ $re ]] ; then
+                return 1
+        else
+                return 0
+        fi
+}
+
+is_number $1
+if [ $? = 0 ] ; then
+        echo "C'est un nombre"
+else
+        echo "Ce n'est pas un nombre"
+fi
+```
+![img10](image/image10.png)
+
+## Exercice 4. Contrôle d'utilisateur
 
