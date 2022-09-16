@@ -72,4 +72,97 @@ fi
 ![img10](image/image10.png)
 
 ## Exercice 4. Contrôle d'utilisateur
+```
+#!/bin/bash
+
+function is_user()
+{
+        userExist=$(getent passwd $1)
+        if [[ $userExist = "" || $1 = "" ]]; then
+                echo -e "\nUtilisation : $0 nom_utilisateur"
+        elif ! [ userExist = -z ]; then
+                echo -e "\nL'utilisateur $(getent passwd $1) existe "
+        fi
+}
+is_user $1
+```
+
+## Exercice 5. Factorielle
+```
+#!/bin/bash
+
+function factorielle()
+{
+        fact=1
+        for i in $(seq 1 $1); do
+                fact=$(($fact * $i))
+        done
+        return $fact
+}
+
+factorielle $1
+echo $?
+```
+
+## Exercice 6. Le juste prix
+
+```
+!#/bin/bash
+
+function alea()
+{
+        rand=$((1 + $RANDOM % 1000))
+        win = 0
+        while [ win -ne 1 ] do
+                read -p 'Saisissez un nombre : ' nb
+                if (( $rand -eq $nb )) then
+                        win = 1
+                        echo -e "\nGagné !"
+                elif (( $rand -gt $nb )) then
+                        echo -e"\nC'est plus !"
+                elif (( $rand -lt $nb )) then
+                        echo -e "\nC'est moins !"
+                fi
+        done
+}
+alea
+
+```
+
+## Exercice 7. Statistiques
+```
+#!/bin/bash
+
+function is_number()
+{
+        re='^[+-]?[0-9]$'
+        if ! [[ $1 =~ $re ]] ; then
+                return 1
+        else
+                return 0
+        fi
+}
+
+is_number $1
+if [ $? = 0 ] ; then
+        echo "C'est un entier"
+else
+        echo "Ce n'est pas un entier"
+fi
+
+is_number $2
+if [ $? = 0 ] ; then
+        echo "C'est un entier"
+else
+        echo "Ce n'est pas un entier"
+fi
+
+is_number $3
+if [ $? = 0 ] ; then
+        echo "C'est un entier"
+else
+        echo "Ce n'est pas un entier"
+fi
+
+```
 
